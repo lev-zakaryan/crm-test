@@ -1,0 +1,16 @@
+<resources>
+  <string name="app_name">MyRetailCrm</string>
+  <string name="fragment_title_auth">Авторизация</string>
+  <string name="fragment_title_list">Список</string>
+
+  <string name="button_text_auth">Войти</string>
+  <string name="button_text_logout">Выйти</string>
+
+  <string name="default_client_url">android-test.retailcrm.ru</string>
+  <string name="default_username">android.developer@retailcrm.ru</string>
+  <string name="default_password">android.developer</string>
+
+  <string name="message_auth_incorrect_credentials">Пожалуйста, укажите домен, имя пользователя и пароль.</string>
+  <string name="message_auth_error">Произошла ошибка при авторизации.</string>
+
+</resources>

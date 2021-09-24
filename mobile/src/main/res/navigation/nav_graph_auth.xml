@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph_auth"
+  app:startDestination="@id/AuthFragment">
+
+  <fragment
+    android:id="@+id/AuthFragment"
+    android:label="@string/fragment_title_auth"
+    android:name="com.zakaryan.myretailcrm.ui.fragment.auth.AuthFragment"
+    tools:layout="@layout/fragment_auth">
+
+    <action
+      android:id="@+id/action_AuthFragment_to_ListFragment"
+      app:launchSingleTop="true"
+      app:destination="@id/ListFragment"
+      app:popUpTo="@id/AuthFragment"
+      app:popUpToInclusive="true"/>
+
+  </fragment>
+
+</navigation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph_main"
+  app:startDestination="@id/ListFragment">
+
+  <include app:graph="@navigation/nav_graph_auth" />
+
+  <fragment
+    android:id="@+id/ListFragment"
+    android:label="@string/fragment_title_list"
+    android:name="com.zakaryan.myretailcrm.ui.fragment.list.ListFragment"
+    tools:layout="@layout/fragment_list">
+
+    <action
+      android:id="@+id/action_ListFragment_to_DetailsFragment"
+      app:destination="@id/DetailsFragment"/>
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/DetailsFragment"
+    android:label="{ARGS_CUSTOMER_NAME}"
+    android:name="com.zakaryan.myretailcrm.ui.fragment.details.DetailsFragment"
+    tools:layout="@layout/fragment_details">
+
+    <argument
+      android:name="ARGS_CUSTOMER_ID"
+      app:argType="string" />
+
+    <argument
+      android:name="ARGS_CUSTOMER_NAME"
+      app:argType="string" />
+
+  </fragment>
+
+  <action
+    android:id="@+id/action_global_to_Auth_Graph"
+    app:launchSingleTop="true"
+    app:destination="@id/nav_graph_auth"
+    app:popUpTo="@id/ListFragment"
+    app:popUpToInclusive="true" />
+
+</navigation>
