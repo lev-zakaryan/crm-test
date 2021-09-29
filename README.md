@@ -2,7 +2,7 @@
 
 **Технический стек**: Kotlin + coroutines, Android Architechture Components (Navigation, ViewModel, LiveData), Dagger2, Retrofit, Security
 
-**Инструменты для отладки**: LeakCanaryChucker (сниффер HTTP трафика с GUI)
+**Инструменты для отладки**: LeakCanary, Chucker (сниффер HTTP трафика с GUI)
 
 ## Архитектура
 
